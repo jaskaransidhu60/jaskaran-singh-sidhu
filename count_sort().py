@@ -1,5 +1,5 @@
-def count_sort(arr):
-    """Sorts the StaticArray using count sort."""
+def count_sort(arr: StaticArray) -> StaticArray:
+    """Sorts the array using the count sort algorithm."""
     min_val, max_val = min_max(arr)
     range_size = max_val - min_val + 1
     count = [0] * range_size
