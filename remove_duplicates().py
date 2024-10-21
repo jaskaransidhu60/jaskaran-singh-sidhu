@@ -1,5 +1,5 @@
-def remove_duplicates(arr):
-    """Removes duplicates from a sorted StaticArray."""
+def remove_duplicates(arr: StaticArray) -> StaticArray:
+    """Removes duplicates from the StaticArray."""
     result = StaticArray(arr.length())
     result.set(0, arr.get(0))
     j = 1
