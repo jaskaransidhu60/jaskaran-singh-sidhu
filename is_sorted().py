@@ -1,5 +1,5 @@
-def is_sorted(arr):
-    """Checks if the StaticArray is sorted in ascending or descending order."""
+def is_sorted(arr: StaticArray) -> int:
+    """Checks if the array is sorted in ascending or descending order."""
     ascending = descending = True
     for i in range(1, arr.length()):
         if arr.get(i) < arr.get(i - 1):
