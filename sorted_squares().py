@@ -1,4 +1,4 @@
-def sorted_squares(arr):
+def sorted_squares(arr: StaticArray) -> StaticArray:
     """Returns a StaticArray with squares of elements sorted."""
     n = arr.length()
     result = StaticArray(n)
