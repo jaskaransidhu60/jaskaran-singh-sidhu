@@ -1,4 +1,4 @@
-def find_mode(arr):
+def find_mode(arr: StaticArray) -> tuple[object, int]:
     """Finds the mode and its frequency."""
     mode, mode_count = arr.get(0), 1
     current_count = 1
