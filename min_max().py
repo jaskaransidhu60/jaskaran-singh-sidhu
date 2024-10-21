@@ -1,6 +1,6 @@
-def min_max(arr):
-    """Returns a tuple containing the minimum and maximum values of the StaticArray."""
-    min_val = max_val = arr.get(0)  # Initialize min and max with the first element
+def min_max(arr: StaticArray) -> tuple[int, int]:
+    """Returns the minimum and maximum values of the StaticArray."""
+    min_val = max_val = arr.get(0)  # Initialize with the first element
     for i in range(1, arr.length()):
         val = arr.get(i)
         if val < min_val:
