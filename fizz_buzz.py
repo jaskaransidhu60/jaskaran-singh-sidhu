@@ -1,14 +1,14 @@
-def fizz_buzz(arr):
-    """Returns a new StaticArray with 'fizz', 'buzz', or 'fizzbuzz' replacing certain values."""
+def fizz_buzz(arr: StaticArray) -> StaticArray:
+    """Replaces elements based on divisibility rules."""
     result = StaticArray(arr.length())
     for i in range(arr.length()):
-        value = arr.get(i)
-        if value % 15 == 0:
+        val = arr.get(i)
+        if val % 15 == 0:
             result.set(i, 'fizzbuzz')
-        elif value % 3 == 0:
+        elif val % 3 == 0:
             result.set(i, 'fizz')
-        elif value % 5 == 0:
+        elif val % 5 == 0:
             result.set(i, 'buzz')
         else:
-            result.set(i, value)
+            result.set(i, val)
     return result
