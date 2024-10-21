@@ -1,5 +1,5 @@
-def rotate(arr, steps):
-    """Returns a new StaticArray with elements rotated by the given number of steps."""
+def rotate(arr: StaticArray, steps: int) -> StaticArray:
+    """Rotates the StaticArray by the given steps."""
     n = arr.length()
     result = StaticArray(n)
     steps = steps % n  # Handle large step values
